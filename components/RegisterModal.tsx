@@ -81,7 +81,7 @@ const RegisterModal: React.FC<RegisterModalProps> = ({ isOpen, onClose, onSwitch
           
           <div className="space-y-4">
             <div>
-              <label htmlFor="fullName" className="block text-sm font-medium text-stone-400 mb-2 text-right">
+              <label htmlFor="fullName" className="block text-sm font-medium text-stone-400 mb-2 text-center">
                 نام و نام خانوادگی
               </label>
               <input
@@ -90,14 +90,14 @@ const RegisterModal: React.FC<RegisterModalProps> = ({ isOpen, onClose, onSwitch
                 name="fullName"
                 value={formData.fullName}
                 onChange={handleInputChange}
-                className="w-full px-4 py-3 bg-black/30 border border-amber-600/30 rounded-lg text-stone-200 placeholder-stone-500 focus:outline-none focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20 transition-all"
+                className="w-full px-4 py-3 bg-black/30 border border-amber-600/30 rounded-lg text-stone-200 placeholder-stone-500 focus:outline-none focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20 transition-all text-center"
                 placeholder="نام و نام خانوادگی خود را وارد کنید"
                 required
               />
             </div>
 
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-stone-400 mb-2 text-right">
+              <label htmlFor="email" className="block text-sm font-medium text-stone-400 mb-2 text-center">
                 ایمیل
               </label>
               <input
@@ -106,14 +106,14 @@ const RegisterModal: React.FC<RegisterModalProps> = ({ isOpen, onClose, onSwitch
                 name="email"
                 value={formData.email}
                 onChange={handleInputChange}
-                className="w-full px-4 py-3 bg-black/30 border border-amber-600/30 rounded-lg text-stone-200 placeholder-stone-500 focus:outline-none focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20 transition-all"
+                className="w-full px-4 py-3 bg-black/30 border border-amber-600/30 rounded-lg text-stone-200 placeholder-stone-500 focus:outline-none focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20 transition-all text-center"
                 placeholder="ایمیل خود را وارد کنید"
                 required
               />
             </div>
 
             <div>
-              <label htmlFor="phone" className="block text-sm font-medium text-stone-400 mb-2 text-right">
+              <label htmlFor="phone" className="block text-sm font-medium text-stone-400 mb-2 text-center">
                 شماره تلفن
               </label>
               <input
@@ -130,7 +130,7 @@ const RegisterModal: React.FC<RegisterModalProps> = ({ isOpen, onClose, onSwitch
             </div>
 
             <div>
-              <label htmlFor="username" className="block text-sm font-medium text-stone-400 mb-2 text-right">
+              <label htmlFor="username" className="block text-sm font-medium text-stone-400 mb-2 text-center">
                 نام کاربری
               </label>
               <input
@@ -139,14 +139,14 @@ const RegisterModal: React.FC<RegisterModalProps> = ({ isOpen, onClose, onSwitch
                 name="username"
                 value={formData.username}
                 onChange={handleInputChange}
-                className="w-full px-4 py-3 bg-black/30 border border-amber-600/30 rounded-lg text-stone-200 placeholder-stone-500 focus:outline-none focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20 transition-all"
+                className="w-full px-4 py-3 bg-black/30 border border-amber-600/30 rounded-lg text-stone-200 placeholder-stone-500 focus:outline-none focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20 transition-all text-center"
                 placeholder="نام کاربری دلخواه خود را وارد کنید"
                 required
               />
             </div>
 
             <div>
-              <label htmlFor="password" className="block text-sm font-medium text-stone-400 mb-2 text-right">
+              <label htmlFor="password" className="block text-sm font-medium text-stone-400 mb-2 text-center">
                 رمز عبور
               </label>
               <input
@@ -155,7 +155,7 @@ const RegisterModal: React.FC<RegisterModalProps> = ({ isOpen, onClose, onSwitch
                 name="password"
                 value={formData.password}
                 onChange={handleInputChange}
-                className={`w-full px-4 py-3 bg-black/30 border rounded-lg text-stone-200 placeholder-stone-500 focus:outline-none focus:ring-2 transition-all ${
+                className={`w-full px-4 py-3 bg-black/30 border rounded-lg text-stone-200 placeholder-stone-500 focus:outline-none focus:ring-2 transition-all text-center ${
                   errors.password 
                     ? 'border-red-500 focus:border-red-400 focus:ring-red-400/20' 
                     : 'border-amber-600/30 focus:border-amber-400 focus:ring-amber-400/20'
@@ -164,12 +164,12 @@ const RegisterModal: React.FC<RegisterModalProps> = ({ isOpen, onClose, onSwitch
                 required
               />
               {errors.password && (
-                <p className="text-red-400 text-xs mt-1 text-right">{errors.password}</p>
+                <p className="text-red-400 text-xs mt-1 text-center">{errors.password}</p>
               )}
             </div>
 
             <div>
-              <label htmlFor="confirmPassword" className="block text-sm font-medium text-stone-400 mb-2 text-right">
+              <label htmlFor="confirmPassword" className="block text-sm font-medium text-stone-400 mb-2 text-center">
                 تکرار رمز عبور
               </label>
               <input
@@ -178,7 +178,7 @@ const RegisterModal: React.FC<RegisterModalProps> = ({ isOpen, onClose, onSwitch
                 name="confirmPassword"
                 value={formData.confirmPassword}
                 onChange={handleInputChange}
-                className={`w-full px-4 py-3 bg-black/30 border rounded-lg text-stone-200 placeholder-stone-500 focus:outline-none focus:ring-2 transition-all ${
+                className={`w-full px-4 py-3 bg-black/30 border rounded-lg text-stone-200 placeholder-stone-500 focus:outline-none focus:ring-2 transition-all text-center ${
                   errors.confirmPassword 
                     ? 'border-red-500 focus:border-red-400 focus:ring-red-400/20' 
                     : 'border-amber-600/30 focus:border-amber-400 focus:ring-amber-400/20'
@@ -187,7 +187,7 @@ const RegisterModal: React.FC<RegisterModalProps> = ({ isOpen, onClose, onSwitch
                 required
               />
               {errors.confirmPassword && (
-                <p className="text-red-400 text-xs mt-1 text-right">{errors.confirmPassword}</p>
+                <p className="text-red-400 text-xs mt-1 text-center">{errors.confirmPassword}</p>
               )}
             </div>
           </div>

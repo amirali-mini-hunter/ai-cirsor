@@ -51,7 +51,7 @@ const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onClose, onSwitchToRegi
           
           <div className="space-y-4">
             <div>
-              <label htmlFor="username" className="block text-sm font-medium text-stone-400 mb-2 text-right">
+              <label htmlFor="username" className="block text-sm font-medium text-stone-400 mb-2 text-center">
                 نام کاربری
               </label>
               <input
@@ -60,14 +60,14 @@ const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onClose, onSwitchToRegi
                 name="username"
                 value={formData.username}
                 onChange={handleInputChange}
-                className="w-full px-4 py-3 bg-black/30 border border-amber-600/30 rounded-lg text-stone-200 placeholder-stone-500 focus:outline-none focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20 transition-all"
+                className="w-full px-4 py-3 bg-black/30 border border-amber-600/30 rounded-lg text-stone-200 placeholder-stone-500 focus:outline-none focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20 transition-all text-center"
                 placeholder="نام کاربری خود را وارد کنید"
                 required
               />
             </div>
 
             <div>
-              <label htmlFor="password" className="block text-sm font-medium text-stone-400 mb-2 text-right">
+              <label htmlFor="password" className="block text-sm font-medium text-stone-400 mb-2 text-center">
                 رمز عبور
               </label>
               <input
@@ -76,7 +76,7 @@ const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onClose, onSwitchToRegi
                 name="password"
                 value={formData.password}
                 onChange={handleInputChange}
-                className="w-full px-4 py-3 bg-black/30 border border-amber-600/30 rounded-lg text-stone-200 placeholder-stone-500 focus:outline-none focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20 transition-all"
+                className="w-full px-4 py-3 bg-black/30 border border-amber-600/30 rounded-lg text-stone-200 placeholder-stone-500 focus:outline-none focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20 transition-all text-center"
                 placeholder="رمز عبور خود را وارد کنید"
                 required
               />

@@ -168,7 +168,7 @@ body {
 
 .info-card {
     background: rgba(15, 23, 42, 0.6);
-    border: 1px solid rgba(148, 163, 184, 0.1);
+    border: 1px solid rgba(251, 191, 36, 0.2);
     border-radius: 12px;
     padding: 1.5rem;
     display: flex;
@@ -180,7 +180,7 @@ body {
 
 .info-card:hover {
     background: rgba(15, 23, 42, 0.8);
-    border-color: rgba(251, 191, 36, 0.3);
+    border-color: rgba(251, 191, 36, 0.4);
     transform: translateY(-2px);
 }
 
@@ -198,7 +198,7 @@ body {
 .info-content h3 {
     font-size: 0.875rem;
     font-weight: 500;
-    color: #94a3b8;
+    color: #d2b48c;
     margin-bottom: 0.25rem;
 }
 
@@ -233,7 +233,7 @@ body {
 .form-input {
     width: 100%;
     padding: 1rem 3rem 1rem 1rem;
-    border: 1px solid rgba(148, 163, 184, 0.2);
+    border: 1px solid rgba(251, 191, 36, 0.3);
     border-radius: 12px;
     background: rgba(15, 23, 42, 0.6);
     color: #e2e8f0;

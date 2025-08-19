@@ -7,11 +7,10 @@
 
 body {
     font-family: 'Vazirmatn', sans-serif;
-    background: linear-gradient(135deg, #2c1810 0%, #1a0f0a 50%, #2c1810 100%);
-    color: #f8f6f0;
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    color: #e2e8f0;
     line-height: 1.6;
     min-height: 100vh;
-    position: relative;
 }
 
 /* Removed complex background overlays for better performance */
@@ -25,8 +24,8 @@ body {
 
 /* Header Styles */
 .admin-header {
-    background: rgba(44, 24, 16, 0.95);
-    border-bottom: 1px solid rgba(210, 180, 140, 0.15);
+    background: rgba(15, 23, 42, 0.95);
+    border-bottom: 1px solid rgba(148, 163, 184, 0.1);
     padding: 1.5rem 0;
     position: sticky;
     top: 0;
@@ -46,7 +45,7 @@ body {
 .header-title {
     font-size: 2rem;
     font-weight: 700;
-    color: #f4a460;
+    color: #fbbf24;
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -74,8 +73,8 @@ body {
 
 /* Content Sections */
 .content-section {
-    background: rgba(44, 24, 16, 0.8);
-    border: 1px solid rgba(244, 164, 96, 0.2);
+    background: rgba(30, 41, 59, 0.8);
+    border: 1px solid rgba(148, 163, 184, 0.1);
     border-radius: 12px;
     padding: 2rem;
     margin-bottom: 2rem;
@@ -94,7 +93,7 @@ body {
 .section-title {
     font-size: 1.75rem;
     font-weight: 700;
-    color: #f4a460;
+    color: #fbbf24;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     letter-spacing: 0.5px;
 }
@@ -128,9 +127,9 @@ body {
 }
 
 .admin-table th {
-    background: rgba(139, 69, 19, 0.8);
+    background: rgba(30, 41, 59, 0.8);
     font-weight: 700;
-    color: #f4a460;
+    color: #fbbf24;
     font-size: 0.95rem;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -138,7 +137,7 @@ body {
 }
 
 .admin-table tr:hover {
-    background: rgba(244, 164, 96, 0.1);
+    background: rgba(251, 191, 36, 0.1);
 }
 
 .admin-table tr:last-child td {
